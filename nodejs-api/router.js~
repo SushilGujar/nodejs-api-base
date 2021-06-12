@@ -1,0 +1,9 @@
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+	console.log('Welcome to the simple nodejs ReST api world. You just sent a GET request');
+	res.send('test router');
+});
+
+module.exports = router;
